@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EventsService {
@@ -17,5 +18,9 @@ public class EventsService {
 
     public Response<List<Events>> getEventsByRegion(String region) {
         return new Response<>(eventsRepository.findByRegion(region), HttpStatus.OK);
+    }
+
+    public Response<Optional<Events>> getEventIdByEvent(Long eventId) {
+        return new Response<>(eventsRepository.findById(eventId), HttpStatus.OK);
     }
 }
