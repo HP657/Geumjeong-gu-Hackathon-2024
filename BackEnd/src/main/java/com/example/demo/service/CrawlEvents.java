@@ -20,6 +20,8 @@ public class CrawlEvents {
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", "application/json");
 
+        Map<String, Object> requestBody = new HashMap<>();
+
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(requestBody, headers);
 
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
