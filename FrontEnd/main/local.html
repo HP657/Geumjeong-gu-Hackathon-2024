@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지역 정보</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/Local.css" />
+  <script src="./js/Local.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+          <a class="navbar-brand" href="../index.html">Team "RUN"</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">메인</a></li>
+                  <li class="nav-item"><a class="nav-link" href="main.html">지역축제</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">쌈뽕한 기능 추가예정</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../sogae/index.html">Blog</a></li>
+                  <li class="nav-item"><a id="loging" class="nav-link" href="#"></a></li>
+                  <li class="nav-item"><a id="logout" class="nav-link" href="#" onclick="logout()"></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- 지역 정보 콘텐츠 -->
+  <h1 id="region-title">지역 정보</h1>
+  <p id="region-content">지역에 대한 정보가 여기에 표시됩니다.</p>
+
+  <!-- Scripts -->
+  <script src="./js/Loging2.js"></script>
+  <script src="./js/logout.js"></script>
+</body>
+</html>

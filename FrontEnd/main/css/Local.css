@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0px auto;
+  background-color: #f4f4f4;
+}
+
+#region-title {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#region-content {
+  display: block; /* 한 줄씩 나오도록 설정 */
+  max-width: 700px; /* 콘텐츠의 최대 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 0 20px; /* 좌우 패딩 추가 */
+}
+
+.event {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* 각 이벤트 간의 간격 */
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  width: 100%; /* 부모 요소의 전체 너비 사용 */
+  box-sizing: border-box; /* 패딩과 보더를 포함한 너비 계산 */
+}
+
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.event p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.event p strong {
+  color: #333;
+}
+
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 부모 요소의 색상 상속 */
+}
+
+a:hover {
+  color: #007bff; /* 링크에 마우스를 올렸을 때 색상 변경 */
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}

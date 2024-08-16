@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Team "RUN"</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Team "RUN"</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">메인</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../main/main.html">지역축제</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">쌈뽕한 기능 추가예정</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Blog</a></li>
+                        <li class="nav-item"><a id="loging" class="nav-link" href="#"></a></li>
+                        <li class="nav-item"><a id="logout" class="nav-link" href="#" onclick="logout()"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">지역축제를 추천합니다.</h1>
+                    <p class="lead mb-0">여러분들의 지역축제를 추천합니다.</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="assets/main1.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">모두가 함께 한 줄기 빛을 밝히는 축제</div>
+                            <h2 class="card-title">부산연등축제</h2>
+                            <p class="card-text">부산연등축제는 부산에 있는 모든 사찰과 시민이 함께 마음을 모으는 어울림 마당축제예요. 어둠을 밝히는 등은 우리 선조에게 각별한 의미를 지니고 있어 간절한 소망과 염원을 여기에 담았다고 해요. ‘연등’은 탐욕과 아집으로 어두워진 마음을 밝히는 것을 상징해요.</p>
+                            <a class="btn btn-primary" href="http://www.bba48.or.kr/">Read more →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/main2.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">대구의 여름 치맥으로 날려버려~</div>
+                                    <h2 class="card-title h4">대구치맥페스티벌</h2>
+                                    <p class="card-text">다양한 치킨과 맥주를 비롯해 공연, 음악, 이색 체험을 즐기는 문화관광축제</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/inc.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">'문화도시' 부평의 음악 잔치</div>
+                                    <h2 class="card-title h4">인천뮤직플로우페스티벌</h2>
+                                    <p class="card-text">과거 미군 기지 애스컴을 중심으로 대중음악사의 변환점 역할을 한 부평의 음악 역사성을 바탕으로, 대중음악의 명맥을 잇고 과거와 현시대의 가교 역할을 하는 야외 음악 축제다.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/dong.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">경기도 동두천의 무료 락 페스티벌</div>
+                                    <h2 class="card-title h4">경기도동두천락페스티벌</h2>
+                                    <p class="card-text">국내 인기 락 뮤지션 초청공연, 주한 미군 밴드, 이전 대회 수상 밴드 공연, 전국 락 밴드 경연 대회(학생부, 일반부) 및 시상식, 각종 체험부스, 락 뮤지션 사인회, 음반 판매, 푸드존 등이 준비되어 있다.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="assets/sound.jpg" alt="..." /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted"></div>
+                                    <h2 class="card-title h4">전라북도전주세계소리축제</h2>
+                                    <p class="card-text">전주세계소리축제는 판소리와 전통음악을 중심으로 월드 뮤직과 다양한 장르의 음악을 아우르는 글로벌 음악 축제다. 2024년은 8월로 개최 시기를 옮겨 여름축제로 진행되며, 로컬 프리즘: 시선의 확장(Local Prism: Enlarging Perspectives)이라는 키워드로 당대 최고의 명인과 국내외 최고의 명작, 월드 뮤직, 지역 예술가들과 신진 예술가들의 무대, 어린이 소리축제 등 다채로운 프로그램들을 선보인다.</p>
+                                    <a class="btn btn-primary" href="#!">Read more →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                    <nav aria-label="Pagination">
+                        <hr class="my-0" />
+                        <ul class="pagination justify-content-center my-4">
+                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">15</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Older</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Search</div>
+                        <div class="card-body">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Categories</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">Web Design</a></li>
+                                        <li><a href="#!">HTML</a></li>
+                                        <li><a href="#!">Freebies</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="#!">JavaScript</a></li>
+                                        <li><a href="#!">CSS</a></li>
+                                        <li><a href="#!">Tutorials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Side Widget</div>
+                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="./../main/js/Loging2.js"></script>
+        <script src="./js/logout.js"></script>
+    </body>
+</html>
