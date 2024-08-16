@@ -15,7 +15,7 @@ public class EventsService {
     @Autowired
     private EventsRepository eventsRepository;
 
-    public Response<List<Events>> seoulEvents() {
-        return new Response<>(eventsRepository.findByRegion("서울시"), HttpStatus.OK);
+    public Response<List<Events>> getEventsByRegion(String region) {
+        return new Response<>(eventsRepository.findByRegion(region), HttpStatus.OK);
     }
 }
