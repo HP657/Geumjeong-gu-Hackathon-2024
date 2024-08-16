@@ -1,16 +1,12 @@
 import psycopg2
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 def create_table():
     conn = psycopg2.connect(
         dbname="postgres",
-        user="postgres",
-        password=os.environ.get("DB_PASSWORD"),
-        host="localhost",
-        port="5432"
+        user="root",
+        password="postgre",
+        host="svc.sel4.cloudtype.app",
+        port="32264"
     )
     cursor = conn.cursor()
     
@@ -38,10 +34,10 @@ def save_to_database(region_data):
     try:
         conn = psycopg2.connect(
             dbname='postgres', 
-            user='postgres',          
-            password=os.environ.get("DB_PASSWORD"),      
-            host='localhost',              
-            port='5432'                    
+            user='root',          
+            password="postgre",      
+            host='svc.sel4.cloudtype.app',              
+            port='32264'                    
         )
         cursor = conn.cursor()
 
