@@ -46,12 +46,11 @@ def crawl_data():
             if place.startswith("장소: "):
                 place = place.replace("장소: ", "").strip()
                 
-
             if contact.startswith("문의: "):
-                contact = contact.replace("문의: ", "").strip().split()[0]
+                contact = contact.replace("문의: ", "").strip()
 
             if period.startswith("기간: "):
-                period = period.replace("기간: ", "").strip().split()[0]
+                period = period[len("기간: "):].strip()
 
             for region in regions:
                 if region in place:
