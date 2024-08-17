@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+            <link href="css/styles.css" rel="stylesheet" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_612ad5c42bc21f818afda11f9696e569 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">Team "RUN"</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">메인</a></li>
+                    <li class="nav-item"><a class="nav-link" href="main/main.html">지역축제</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map.html">축제지도</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sogae/index.html">Blog</a></li>
+                    <li class="nav-item"><a id="loging" class="nav-link" href="#"></a></li>
+                    <li class="nav-item"><a id="logout" class="nav-link" href="#" onclick="logout()"></a></li>
+                </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+            <div class="folium-map" id="map_612ad5c42bc21f818afda11f9696e569" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_612ad5c42bc21f818afda11f9696e569 = L.map(
+                "map_612ad5c42bc21f818afda11f9696e569",
+                {
+                    center: [36.5, 127.8],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1712f4e6265cd68f7874e0b8dd0f4a24 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+            var marker_ce554f5e876a6e82772f4d20f758ada9 = L.marker(
+                [37.5326, 127.024612],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_7ba2c4f10eb895f166a983a28ddf20a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc363223b032b2b5a1b5971f86f18361 = $(`<div id="html_dc363223b032b2b5a1b5971f86f18361" style="width: 100.0%; height: 100.0%;">서울드럼페스티벌 (Seoul Drum Festival)</div>`)[0];
+            popup_7ba2c4f10eb895f166a983a28ddf20a5.setContent(html_dc363223b032b2b5a1b5971f86f18361);
+        
+
+        marker_ce554f5e876a6e82772f4d20f758ada9.bindPopup(popup_7ba2c4f10eb895f166a983a28ddf20a5)
+        ;
+
+        
+    
+    
+            var marker_379ce2b6dec5eddefc0143b8288d20f0 = L.marker(
+                [35.1796, 129.075642],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_a486664a601cf0231c3c6e5b48ca7d10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b86eacb554d055b29ca4148a4ef70fe8 = $(`<div id="html_b86eacb554d055b29ca4148a4ef70fe8" style="width: 100.0%; height: 100.0%;">부산국제영화제 (Busan International Film Festival)</div>`)[0];
+            popup_a486664a601cf0231c3c6e5b48ca7d10.setContent(html_b86eacb554d055b29ca4148a4ef70fe8);
+        
+
+        marker_379ce2b6dec5eddefc0143b8288d20f0.bindPopup(popup_a486664a601cf0231c3c6e5b48ca7d10)
+        ;
+
+        
+    
+    
+            var marker_a08b5d327952b99692accaf4564564d9 = L.marker(
+                [35.8714, 128.601749],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_1a90e6ab091e336fcdc3f061656ff4e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2d4e315cbf9e262f4e9ba97a4262bbb = $(`<div id="html_d2d4e315cbf9e262f4e9ba97a4262bbb" style="width: 100.0%; height: 100.0%;">대구치맥페스티벌 (Daegu Chimac Festival)</div>`)[0];
+            popup_1a90e6ab091e336fcdc3f061656ff4e3.setContent(html_d2d4e315cbf9e262f4e9ba97a4262bbb);
+        
+
+        marker_a08b5d327952b99692accaf4564564d9.bindPopup(popup_1a90e6ab091e336fcdc3f061656ff4e3)
+        ;
+
+        
+    
+    
+            var marker_fe337f84e65944177aac21726bc9719e = L.marker(
+                [37.4563, 126.7052],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_3345d4ba5c8b4465c4cc25ef1500d593 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce4093268bb2dbc91b279ec840e96a3f = $(`<div id="html_ce4093268bb2dbc91b279ec840e96a3f" style="width: 100.0%; height: 100.0%;">인천펜타포트락페스티벌 (Incheon Pentaport Rock Festival)</div>`)[0];
+            popup_3345d4ba5c8b4465c4cc25ef1500d593.setContent(html_ce4093268bb2dbc91b279ec840e96a3f);
+        
+
+        marker_fe337f84e65944177aac21726bc9719e.bindPopup(popup_3345d4ba5c8b4465c4cc25ef1500d593)
+        ;
+
+        
+    
+    
+            var marker_d6e92779c8d7425f770fbc38edfa4c3f = L.marker(
+                [35.1601, 126.8514],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_8c4109594e93302350df4c771585be49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d6fd648bccab845b6570b3cd2d8d698 = $(`<div id="html_5d6fd648bccab845b6570b3cd2d8d698" style="width: 100.0%; height: 100.0%;">광주비엔날레 (Gwangju Biennale)</div>`)[0];
+            popup_8c4109594e93302350df4c771585be49.setContent(html_5d6fd648bccab845b6570b3cd2d8d698);
+        
+
+        marker_d6e92779c8d7425f770fbc38edfa4c3f.bindPopup(popup_8c4109594e93302350df4c771585be49)
+        ;
+
+        
+    
+    
+            var marker_9ef7ca950c3854e9a4372e9e8df079b7 = L.marker(
+                [36.351, 127.3855],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_8a24a2c098b4bf424c15de317e744a8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcce7acb578405e55003fe6e20989ecc = $(`<div id="html_fcce7acb578405e55003fe6e20989ecc" style="width: 100.0%; height: 100.0%;">대전사이언스페스티벌 (Daejeon Science Festival)</div>`)[0];
+            popup_8a24a2c098b4bf424c15de317e744a8d.setContent(html_fcce7acb578405e55003fe6e20989ecc);
+        
+
+        marker_9ef7ca950c3854e9a4372e9e8df079b7.bindPopup(popup_8a24a2c098b4bf424c15de317e744a8d)
+        ;
+
+        
+    
+    
+            var marker_5cda996baeb9c24c2ab9617693344013 = L.marker(
+                [35.5384, 129.3114],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_84aeb836d9404b5fb1de1c1278d05a17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_884811dffb90be08aa1d42640cbdef55 = $(`<div id="html_884811dffb90be08aa1d42640cbdef55" style="width: 100.0%; height: 100.0%;">울산고래축제 (Ulsan Whale Festival)</div>`)[0];
+            popup_84aeb836d9404b5fb1de1c1278d05a17.setContent(html_884811dffb90be08aa1d42640cbdef55);
+        
+
+        marker_5cda996baeb9c24c2ab9617693344013.bindPopup(popup_84aeb836d9404b5fb1de1c1278d05a17)
+        ;
+
+        
+    
+    
+            var marker_83623632d5ffe9627bab9f239a041c64 = L.marker(
+                [36.487, 127.2822],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_e6f609b90eaac6f674c85966100efc5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f2051782c818814f0e2b715dbd9c369 = $(`<div id="html_6f2051782c818814f0e2b715dbd9c369" style="width: 100.0%; height: 100.0%;">세종축제 (Sejong Festival)</div>`)[0];
+            popup_e6f609b90eaac6f674c85966100efc5a.setContent(html_6f2051782c818814f0e2b715dbd9c369);
+        
+
+        marker_83623632d5ffe9627bab9f239a041c64.bindPopup(popup_e6f609b90eaac6f674c85966100efc5a)
+        ;
+
+        
+    
+    
+            var marker_41200a092bb18a7aa5fb118708bff9a3 = L.marker(
+                [37.2636, 127.0286],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_28b9e8ecc08cf854aef0e32a6f927833 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a300813d224b3551cc8267badd47dbb1 = $(`<div id="html_a300813d224b3551cc8267badd47dbb1" style="width: 100.0%; height: 100.0%;">수원화성문화제 (Suwon Hwaseong Cultural Festival)</div>`)[0];
+            popup_28b9e8ecc08cf854aef0e32a6f927833.setContent(html_a300813d224b3551cc8267badd47dbb1);
+        
+
+        marker_41200a092bb18a7aa5fb118708bff9a3.bindPopup(popup_28b9e8ecc08cf854aef0e32a6f927833)
+        ;
+
+        
+    
+    
+            var marker_e30dc484ced6d8a892b853e56561712b = L.marker(
+                [37.3705, 128.3897],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_f5c11cdd552bd33ec21702635766ca3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa783a81aebae34265a9c127e5a145d5 = $(`<div id="html_aa783a81aebae34265a9c127e5a145d5" style="width: 100.0%; height: 100.0%;">평창대관령음악제 (Pyeongchang Daegwallyeong Music Festival)</div>`)[0];
+            popup_f5c11cdd552bd33ec21702635766ca3a.setContent(html_aa783a81aebae34265a9c127e5a145d5);
+        
+
+        marker_e30dc484ced6d8a892b853e56561712b.bindPopup(popup_f5c11cdd552bd33ec21702635766ca3a)
+        ;
+
+        
+    
+    
+            var marker_de4630f214f74c92c54aa95d510ef7ee = L.marker(
+                [36.6424, 127.4889],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_d4c641c8b3968a13bdd5bb75f89b8e4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce61e3cbdc6f72b0cf6eefe50b56b311 = $(`<div id="html_ce61e3cbdc6f72b0cf6eefe50b56b311" style="width: 100.0%; height: 100.0%;">청주직지코리아국제페스티벌 (Cheongju Jikji Korea Festival)</div>`)[0];
+            popup_d4c641c8b3968a13bdd5bb75f89b8e4b.setContent(html_ce61e3cbdc6f72b0cf6eefe50b56b311);
+        
+
+        marker_de4630f214f74c92c54aa95d510ef7ee.bindPopup(popup_d4c641c8b3968a13bdd5bb75f89b8e4b)
+        ;
+
+        
+    
+    
+            var marker_ce5307ad1b043d50508ee948ae568751 = L.marker(
+                [36.71, 126.5576],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_55e43d47a64d53b53e8530743c7dc31e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54d7ab33a811424992c699243d38959d = $(`<div id="html_54d7ab33a811424992c699243d38959d" style="width: 100.0%; height: 100.0%;">서산해미읍성축제 (Seosan Haemi Fortress Festival)</div>`)[0];
+            popup_55e43d47a64d53b53e8530743c7dc31e.setContent(html_54d7ab33a811424992c699243d38959d);
+        
+
+        marker_ce5307ad1b043d50508ee948ae568751.bindPopup(popup_55e43d47a64d53b53e8530743c7dc31e)
+        ;
+
+        
+    
+    
+            var marker_141abc706a7699542d0cc6a1cb5cdab3 = L.marker(
+                [35.8218, 127.148],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_9af9150cbe6d067b846777b59782dbe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcad4cb82d47f603f84e5ecc55ffa853 = $(`<div id="html_bcad4cb82d47f603f84e5ecc55ffa853" style="width: 100.0%; height: 100.0%;">전주국제영화제 (Jeonju International Film Festival)</div>`)[0];
+            popup_9af9150cbe6d067b846777b59782dbe7.setContent(html_bcad4cb82d47f603f84e5ecc55ffa853);
+        
+
+        marker_141abc706a7699542d0cc6a1cb5cdab3.bindPopup(popup_9af9150cbe6d067b846777b59782dbe7)
+        ;
+
+        
+    
+    
+            var marker_9639376ebc0a0a86f660e2c5cd8ac203 = L.marker(
+                [34.7604, 127.6622],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_fddf114865ce0f7cbf2fe4717ee6e704 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34a15379ec26664b6fb0afa7f67255d4 = $(`<div id="html_34a15379ec26664b6fb0afa7f67255d4" style="width: 100.0%; height: 100.0%;">여수밤바다축제 (Yeosu Night Sea Festival)</div>`)[0];
+            popup_fddf114865ce0f7cbf2fe4717ee6e704.setContent(html_34a15379ec26664b6fb0afa7f67255d4);
+        
+
+        marker_9639376ebc0a0a86f660e2c5cd8ac203.bindPopup(popup_fddf114865ce0f7cbf2fe4717ee6e704)
+        ;
+
+        
+    
+    
+            var marker_eca6dfce01a1b3b2c7d472eabe9e749c = L.marker(
+                [36.5684, 128.729],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_8a74fb7dee91280c06b0fc6cd3ec9a8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a30b96bc3a431d3b2e94d623c5ab212 = $(`<div id="html_5a30b96bc3a431d3b2e94d623c5ab212" style="width: 100.0%; height: 100.0%;">안동국제탈춤페스티벌 (Andong Mask Dance Festival)</div>`)[0];
+            popup_8a74fb7dee91280c06b0fc6cd3ec9a8f.setContent(html_5a30b96bc3a431d3b2e94d623c5ab212);
+        
+
+        marker_eca6dfce01a1b3b2c7d472eabe9e749c.bindPopup(popup_8a74fb7dee91280c06b0fc6cd3ec9a8f)
+        ;
+
+        
+    
+    
+            var marker_7bc78cc931ec3f4a0b77a855a4ae5d03 = L.marker(
+                [34.8541, 128.4331],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_fcb69bcde0bf6725d7844198e6d6f84d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab3acc725ffe2bb5fca2a9f2eea1833b = $(`<div id="html_ab3acc725ffe2bb5fca2a9f2eea1833b" style="width: 100.0%; height: 100.0%;">통영국제음악제 (Tongyeong International Music Festival)</div>`)[0];
+            popup_fcb69bcde0bf6725d7844198e6d6f84d.setContent(html_ab3acc725ffe2bb5fca2a9f2eea1833b);
+        
+
+        marker_7bc78cc931ec3f4a0b77a855a4ae5d03.bindPopup(popup_fcb69bcde0bf6725d7844198e6d6f84d)
+        ;
+
+        
+    
+    
+            var marker_f62bec1fa84bab7adea52b6912f4078b = L.marker(
+                [33.4996, 126.5312],
+                {}
+            ).addTo(map_612ad5c42bc21f818afda11f9696e569);
+        
+    
+        var popup_d1923db3bfa2e28a3fe56f6cca8dd0e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68e1d89091b95cf68c1ebfdde328ac41 = $(`<div id="html_68e1d89091b95cf68c1ebfdde328ac41" style="width: 100.0%; height: 100.0%;">제주들불축제 (Jeju Fire Festival)</div>`)[0];
+            popup_d1923db3bfa2e28a3fe56f6cca8dd0e9.setContent(html_68e1d89091b95cf68c1ebfdde328ac41);
+        
+
+        marker_f62bec1fa84bab7adea52b6912f4078b.bindPopup(popup_d1923db3bfa2e28a3fe56f6cca8dd0e9)
+        ;
+
+        
+    
+</script>
+<script src="./main/js/loging2.js"></script>
+<script src="./main/js/logout.js"></script>
+</html>
